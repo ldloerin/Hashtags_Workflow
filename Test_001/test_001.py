@@ -2,9 +2,9 @@ import os
 import pytest
 import sys
 sys.path.append(os.path.split(os.path.dirname(__file__))[0])
-from Services.Config.get_input import GetInput
+# from Services.Config.get_input import GetInput
 
-config = GetInput(__file__)
+# config = GetInput(__file__)
 
 
 class TestClass:
