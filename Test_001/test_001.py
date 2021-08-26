@@ -9,16 +9,10 @@ config = GetInput(__file__)
 
 
 class TestClass:
-    #def test_001_build_mail_address(self):
-    #    test_code_file = os.path.join(
-    #        os.path.split(os.path.dirname(__file__))[0],
-    #        config.test_code_path,
-    #        config.test_code_name,
-    #    )
-    #    my_code = BuildMailAddress(test_code_file)
-    #    my_code.execute_workflow()
-    #    ret_value = my_code.mail_address
-    #    assert ret_value == config.assert_value
+    def test_001_dummy(self):
+        x = 1
+        y = 1
+        assert x == y
 
     def test_002_simple_assert(self):
         x = 1
