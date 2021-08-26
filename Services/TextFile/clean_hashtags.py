@@ -1,19 +1,16 @@
-from collections import OrderedDict
-
-
 class CleanHashtags():
     def __init__(self, input):
         self.content = input.content
         self.input_file = input.hashtag_file
         self.__remove_word_wrapping()
         self.__remove_double_content()
-        #self.__rewrite_hashtag_file()
+        # self.__rewrite_hashtag_file()
 
     def __remove_word_wrapping(self):
         self.new_content = []
         for line in self.content:
-            line = line.replace('\n','')
-            line = line.replace('\r','')
+            line = line.replace('\n', '')
+            line = line.replace('\r', '')
             self.new_content.append(line)
 
     def __remove_double_content(self):
@@ -27,3 +24,4 @@ class CleanHashtags():
         f = open(self.input_file, 'w')
         f.write(new_content)
         f.close()
+        

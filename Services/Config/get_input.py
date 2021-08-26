@@ -20,5 +20,5 @@ class GetInput:
     def __get_file_path(self, key, destination):
         file_name = getattr(self, key)
         file_path = os.path.join(self.code_path, destination, file_name)
-        file_path = file_path.replace('\\','/')
+        file_path = file_path.replace('\\', '/')
         setattr(self, key, file_path)

@@ -10,6 +10,6 @@ class IterateRandomHashtags():
         self.__iterate_constellations()
 
     def __iterate_constellations(self):
-        for constellation in range(0,self.number_of_random_lists):
+        for constellation in range(0, self.number_of_random_lists):
             text = GenerateRandomHashtags(self).my_random_hashtag_text
             self.random_hashtag_text += text
