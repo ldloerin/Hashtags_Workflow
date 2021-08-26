@@ -24,4 +24,3 @@ class CleanHashtags():
         f = open(self.input_file, 'w')
         f.write(new_content)
         f.close()
-        
