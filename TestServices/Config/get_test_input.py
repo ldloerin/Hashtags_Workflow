@@ -13,7 +13,7 @@ class GetTestInput:
             self.__get_file_path('essential_hashtag_file')
             self.__get_file_path('output_hashtag_file')
         except Exception as ex:
-            print(ex)
+            pass
 
     def __get_input_parameters(self):
         parameter_file = os.path.join(self.code_path, "Input", "config.json")

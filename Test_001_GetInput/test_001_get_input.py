@@ -7,11 +7,9 @@ from TestServices.AccessMethods.run_get_input import RunGetInput
 
 # Get test cofiguration input
 config = GetTestInput(__file__)
-print(config.general_hashtag_file)
 
 # Run method to be tested
 input = RunGetInput(config.main_source_code).execute_workflow()
-#print(input.general_hashtag_file)
 
 
 class TestClass:
