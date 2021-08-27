@@ -1,0 +1,7 @@
+{
+    "main_source_code": "Source/hashtag_generator.py",
+    "general_hashtag_file": "Source/Input/AllGeneralHashtags.txt",
+    "essential_hashtag_file": "Source/Input/AllEssentialHashtags.txt",
+    "output_hashtag_file": "Source/Output/RandomHashtags.txt",
+    "tmp_file": "tmp_RandomHashtags.txt"
+}
