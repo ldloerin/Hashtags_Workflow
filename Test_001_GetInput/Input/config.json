@@ -1,7 +1,7 @@
 {
-    "main_source_code": "C:/Users/david/Documents/SoftwareDevelopment/Hashtags_Workflow/Source/hashtag_generator.py",
-    "general_hashtag_file": "C:/Users/david/Documents/SoftwareDevelopment/Hashtags_Workflow/Source/Input/AllGeneralHashtags.txt",
-    "essential_hashtag_file": "C:/Users/david/Documents/SoftwareDevelopment/Hashtags_Workflow/Source/Input/AllEssentialHashtags.txt",
-    "output_hashtag_file": "C:/Users/david/Documents/SoftwareDevelopment/Hashtags_Workflow/Source/Output/RandomHashtags.txt",
+    "main_source_code": "Source/hashtag_generator.py",
+    "general_hashtag_file": "Source/Input/AllGeneralHashtags.txt",
+    "essential_hashtag_file": "Source/Input/AllEssentialHashtags.txt",
+    "output_hashtag_file": "Source/Output/RandomHashtags.txt",
     "tmp_file": "tmp_RandomHashtags.txt"
 }
