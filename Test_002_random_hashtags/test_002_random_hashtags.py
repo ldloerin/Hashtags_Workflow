@@ -20,7 +20,7 @@ class TestClass:
     def test_2_essential_random_hashtags(self):
         all_essential_hashtags_found = True
         for hashtag in input.essential_hashtags:
-            if not hashtag in input.random_hashtag_list:
+            if hashtag not in input.random_hashtag_list:
                 all_essential_hashtags_found = False
                 break
         assert all_essential_hashtags_found is True
