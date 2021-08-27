@@ -22,7 +22,7 @@ jobs:
 
     - name: Lint with flake8
       run: |
-        flake8 --ignore=E402
+        flake8 --ignore=E128,E402
 
     - name: Test with pytest
       run: |
