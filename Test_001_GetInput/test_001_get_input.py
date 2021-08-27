@@ -1,5 +1,5 @@
 import os
-import pytest
+# import pytest
 import sys
 sys.path.append(os.path.split(os.path.dirname(__file__))[0])
 from TestServices.Config.get_test_input import GetTestInput
