@@ -20,7 +20,6 @@ class GetTestInput:
             setattr(self, key, value)
 
     def __get_file_path(self, key, relative_path):
-        file_name = getattr(self, key)
         file_path = os.path.join(self.root_path, relative_path)
         file_path = file_path.replace('\\', '/')
         setattr(self, key, file_path)
