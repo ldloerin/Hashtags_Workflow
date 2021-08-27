@@ -5,9 +5,11 @@ sys.path.append(os.path.split(os.path.dirname(__file__))[0])
 from TestServices.Config.get_test_input import GetTestInput
 from TestServices.AccessMethods.run_get_input import RunGetInput
 
+# Get test cofiguration input
 config = GetTestInput(__file__)
-my_code = RunGetInput(config.main_source_code)
-input = my_code.execute_workflow()
+
+# Run method to be tested
+input = RunGetInput(config.main_source_code).execute_workflow()
 
 
 class TestClass:

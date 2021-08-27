@@ -5,7 +5,7 @@ class GenerateRandomHashtags():
     def __init__(self, input):
         self.general_hashtags = input.general_hashtags
         self.essential_hashtags = input.essential_hashtags
-        self.random_hashtag_list = input.essential_hashtags
+        self.random_hashtag_list = input.essential_hashtags.copy()
         self.__generate_random_hashtag_list()
         self.__write_random_hashtag_text()
 

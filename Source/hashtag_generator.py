@@ -10,7 +10,6 @@ from Services.Hashtags.iterate_random_hashtags import IterateRandomHashtags
 
 class HashtagGenerator(GetInput):
     def execute_workflow(self):
-        print(dir(self))
         self.__handle_input_files()
         self.__generate_random_hashtags()
         self.__write_random_hashtag_file()
