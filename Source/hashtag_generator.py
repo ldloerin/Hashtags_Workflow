@@ -6,6 +6,7 @@ from Services.TextFile.read_text_content import ReadTextContent
 from Services.TextFile.clean_hashtags import CleanHashtags
 from Services.TextFile.write_text_content import WriteTextContent
 from Services.Hashtags.iterate_random_hashtags import IterateRandomHashtags
+from Services.Output.write_dockerfile import WriteDockerfile
 
 
 class HashtagGenerator(GetInput):
@@ -13,6 +14,7 @@ class HashtagGenerator(GetInput):
         self.__handle_input_files()
         self.__generate_random_hashtags()
         self.__write_random_hashtag_file()
+        self.__create_dockerfile()
 
     def __handle_input_files(self):
         self.hashtag_file = self.general_hashtag_file
@@ -28,6 +30,11 @@ class HashtagGenerator(GetInput):
 
     def __write_random_hashtag_file(self):
         WriteTextContent(self)
+
+    def __create_dockerfile(self):
+        file_path = (os.path.dirname(__file__))
+        self.root_path = (os.path.dirname(file_path))
+        WriteDockerfile(self)
 
 
 my_code = HashtagGenerator(__file__)
