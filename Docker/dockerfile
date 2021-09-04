@@ -2,25 +2,25 @@ FROM ubuntu
 
 RUN apt-get update
 
-CMD ["echo", "#europe #Montevideo #Wellington #Kapstadt #carribean #Kathmandu #travelphotography #city #Prag #Chișinău #australia #spain #beach #italy #Suva #architecture #travel #scubadiving #Reykjavík #greece #nature #Kabul #SantiagodeChile #snorkel #diving #sun #adria #PortVila #portugal #Lima "]
+CMD ["echo", "#sun #Suva #SãoTomé #Gitega #australia #spain #carribean #Ottawa #adria #Wien #Castries #travelphotography #diving #portugal #beach #Kairo #Kapstadt #snorkel #greece #Paramaribo #Monrovia #architecture #Belmopan #scubadiving #city #italy #travel #europe #nature #Reykjavík "]
 
-CMD ["echo", "#Peking #Budapest #australia #greece #Athen #sun #Harare #Apia #snorkel #europe #italy #NDjamena #Majuro #Vaduz #architecture #travel #adria #carribean #diving #Bern #city #portugal #Paramaribo #nature #travelphotography #Port-au-Prince #spain #beach #Reykjavík #scubadiving "]
+CMD ["echo", "#travel #Ankara #snorkel #scubadiving #Baku #Monrovia #greece #italy #europe #portugal #beach #Nassau #nature #australia #carribean #PortLouis #spain #Algier #architecture #city #sun #PortVila #travelphotography #Kinshasa #Manila #diving #Reykjavík #Dublin #adria #Apia "]
 
-CMD ["echo", "#SouthTarawa #architecture #sun #greece #Malabo #travelphotography #Kingston #beach #australia #Paris #Pjöngjang #city #italy #Havanna #Islamabad #scubadiving #Hanoi #europe #diving #adria #portugal #carribean #Palikir #nature #snorkel #Reykjavík #spain #Algier #travel #Bangui "]
+CMD ["echo", "#Wellington #Duschanbe #nature #portugal #Dodoma #italy #snorkel #scubadiving #Kuwait #carribean #beach #Banjul #architecture #Reykjavík #europe #Sanaa #diving #Ottawa #adria #australia #travelphotography #travel #Bukarest #sun #city #Dakar #spain #Basseterre #greece #Daressalam "]
 
-CMD ["echo", "#travel #architecture #italy #Kopenhagen #Caracas #Nikosia #nature #adria #portugal #Georgetown #Reykjavík #Kabul #city #greece #diving #sun #Teheran #beach #australia #carribean #scubadiving #travelphotography #BuenosAires #AbuDhabi #spain #Peking #europe #snorkel #Sanaa #DenHaag "]
+CMD ["echo", "#portugal #AndorralaVella #diving #greece #nature #travelphotography #scubadiving #Reykjavík #architecture #AbuDhabi #beach #Palikir #Vaduz #Duschanbe #snorkel #Nikosia #Mogadischu #travel #italy #Yaounde #carribean #Stockholm #Vatikanstadt #Lissabon #australia #sun #europe #adria #city #spain "]
 
-CMD ["echo", "#city #adria #spain #portugal #architecture #scubadiving #europe #italy #beach #PortMoresby #Nur-Sultan #carribean #Athen #australia #Sofia #nature #Sarajevo #sun #Nassau #diving #Rom #Manama #Reykjavík #Lomé #snorkel #greece #Bern #PortoNovo #travelphotography #travel "]
+CMD ["echo", "#city #greece #Kapstadt #nature #carribean #adria #australia #Dakar #beach #scubadiving #europe #Amman #Ulaanbaatar #Warschau #travel #Paramaribo #spain #Victoria #architecture #Belmopan #travelphotography #italy #diving #portugal #snorkel #Port-au-Prince #Brazzaville #Reykjavík #Sofia #sun "]
 
-CMD ["echo", "#St.Georges #travel #Bridgetown #Valletta #europe #scubadiving #Monaco #Tallinn #diving #city #architecture #snorkel #australia #Antananarivo #portugal #Reykjavík #Wien #italy #beach #travelphotography #Malé #Kigali #Manama #spain #adria #carribean #sun #nature #greece #Algier "]
+CMD ["echo", "#Dschibuti #australia #Vientiane #Conakry #Manila #italy #spain #nature #Riad #architecture #greece #BuenosAires #Bukarest #Maskat #Khartum #diving #adria #Reykjavík #sun #europe #Athen #travel #snorkel #scubadiving #city #Sarajevo #carribean #beach #portugal #travelphotography "]
 
-CMD ["echo", "#spain #sun #scubadiving #italy #Valletta #Bangui #diving #greece #snorkel #travel #carribean #Praia #city #adria #travelphotography #portugal #Lomé #Riga #Reykjavík #Lusaka #Helsinki #australia #Ankara #Amman #nature #SanJose #europe #architecture #Kuwait #beach "]
+CMD ["echo", "#portugal #scubadiving #Pjöngjang #Wien #greece #Reykjavík #Luxemburg #architecture #travelphotography #europe #nature #Dublin #australia #Khartum #Podgorica #sun #Aden #Neu-Delhi #Monaco #spain #italy #adria #Malabo #travel #diving #beach #Riga #carribean #city #snorkel "]
 
-CMD ["echo", "#Kapstadt #italy #spain #Brasília #snorkel #portugal #sun #city #architecture #Reykjavík #Daressalam #travelphotography #Nur-Sultan #carribean #australia #Maseru #diving #Ngerulmud #adria #scubadiving #nature #PortLouis #greece #Riga #europe #Bloemfontein #beach #Duschanbe #travel #Riad "]
+CMD ["echo", "#travel #snorkel #beach #city #nature #spain #Kingston #scubadiving #australia #diving #travelphotography #SanJose #adria #carribean #Ngerulmud #Athen #italy #Abidjan #Moskau #Reykjavík #Georgetown #SantoDomingo #Luxemburg #europe #architecture #greece #portugal #Asmara #sun #Ouagadougou "]
 
-CMD ["echo", "#australia #scubadiving #Lima #italy #Pjöngjang #Malé #Kinshasa #architecture #nature #Montevideo #city #beach #Duschanbe #travel #europe #travelphotography #Nur-Sultan #spain #Bangkok #Honiara #greece #portugal #adria #snorkel #diving #Reykjavík #carribean #sun #Asunción #SantiagodeChile "]
+CMD ["echo", "#Neu-Delhi #Maputo #beach #Ottawa #Kairo #portugal #Kingston #Kopenhagen #scubadiving #Paramaribo #europe #sun #Damaskus #greece #city #carribean #italy #nature #Rom #australia #architecture #snorkel #adria #diving #Gaborone #Manama #travelphotography #Reykjavík #spain #travel "]
 
-CMD ["echo", "#europe #scubadiving #snorkel #greece #sun #Nukualofa #Paramaribo #travel #Monaco #portugal #city #Gaborone #spain #LaPaz #Reykjavík #Thimphu #Kampala #travelphotography #carribean #Kapstadt #australia #Belgrad #Riad #italy #Dakar #architecture #diving #beach #adria #nature "]
+CMD ["echo", "#snorkel #architecture #diving #sun #travelphotography #europe #italy #Conakry #spain #scubadiving #greece #Reykjavík #Algier #Podgorica #Suva #Monrovia #Maskat #Athen #nature #city #Paris #carribean #adria #Kathmandu #travel #australia #Islamabad #Bischkek #beach #portugal "]
 
 CMD ["echo", ""]
 
