@@ -1,7 +1,7 @@
 import codecs
 
 
-class CleanHashtags():
+class CleanHashtags:
     def __init__(self, content, hashtag_file):
         self.content = content
         self.input_file = hashtag_file

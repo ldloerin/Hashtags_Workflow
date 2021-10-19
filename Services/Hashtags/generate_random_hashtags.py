@@ -1,7 +1,7 @@
 import random
 
 
-class GenerateRandomHashtags():
+class GenerateRandomHashtags:
     def __init__(self, general_hashtags, essential_hashtags, number_of_random_lists):
         self.general_hashtags = general_hashtags
         self.essential_hashtags = essential_hashtags

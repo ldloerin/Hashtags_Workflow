@@ -35,8 +35,8 @@ class HashtagGenerator(GetInput):
 
     def __create_dockerfile(self):
         file_path = (os.path.dirname(__file__))
-        self.root_path = (os.path.dirname(file_path))
-        WriteDockerfile(self)
+        root_path = (os.path.dirname(file_path))
+        WriteDockerfile(root_path, self.output_content)
 
 
 my_code = HashtagGenerator(__file__)

@@ -2,10 +2,10 @@ import codecs
 import os
 
 
-class WriteDockerfile():
-    def __init__(self, input):
-        self.dockerfile = os.path.join(input.root_path, 'Docker', 'dockerfile')
-        self.output_content = input.output_content
+class WriteDockerfile:
+    def __init__(self, root_path, output_content):
+        self.dockerfile = os.path.join(root_path, 'Docker', 'dockerfile')
+        self.output_content = output_content
         self.__build_content()
         self.__write_file()
 
