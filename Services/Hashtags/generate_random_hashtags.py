@@ -2,12 +2,19 @@ import random
 
 
 class GenerateRandomHashtags():
-    def __init__(self, input):
-        self.general_hashtags = input.general_hashtags
-        self.essential_hashtags = input.essential_hashtags
-        self.random_hashtag_list = input.essential_hashtags.copy()
-        self.__generate_random_hashtag_list()
-        self.__write_random_hashtag_text()
+    def __init__(self, general_hashtags, essential_hashtags, number_of_random_lists):
+        self.general_hashtags = general_hashtags
+        self.essential_hashtags = essential_hashtags
+        self.random_hashtag_list = essential_hashtags.copy()
+        self.number_of_random_lists = number_of_random_lists
+        self.__iterate_constellations()
+
+    def __iterate_constellations(self):
+        self.random_hashtag_text = ''
+        for i in range(0, self.number_of_random_lists):
+            self.__generate_random_hashtag_list()
+            self.__write_random_hashtag_text()
+            self.random_hashtag_text += self.my_random_hashtag_text
 
     def __generate_random_hashtag_list(self):
         amount = 30 - len(self.essential_hashtags)

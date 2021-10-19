@@ -5,7 +5,7 @@ from Services.Config.get_input import GetInput
 from Services.TextFile.read_text_content import ReadTextContent
 from Services.TextFile.clean_hashtags import CleanHashtags
 from Services.TextFile.write_text_content import WriteTextContent
-from Services.Hashtags.iterate_random_hashtags import IterateRandomHashtags
+from Services.Hashtags.generate_random_hashtags import GenerateRandomHashtags
 from Services.Output.write_dockerfile import WriteDockerfile
 
 
@@ -17,19 +17,21 @@ class HashtagGenerator(GetInput):
         self.__create_dockerfile()
 
     def __handle_input_files(self):
-        self.hashtag_file = self.general_hashtag_file
-        self.content = ReadTextContent.read_file(self.hashtag_file)
-        self.general_hashtags = CleanHashtags(self).new_content
+        hashtag_file = os.path.join(os.path.dirname(__file__), 'Input', self.general_hashtag_file)
+        content = ReadTextContent.read_file(hashtag_file)
+        self.general_hashtags = CleanHashtags(content, hashtag_file).new_content
 
-        self.hashtag_file = self.essential_hashtag_file
-        self.content = ReadTextContent.read_file(self.hashtag_file)
-        self.essential_hashtags = CleanHashtags(self).new_content
+        hashtag_file = os.path.join(os.path.dirname(__file__), 'Input', self.essential_hashtag_file)
+        content = ReadTextContent.read_file(hashtag_file)
+        self.essential_hashtags = CleanHashtags(content, hashtag_file).new_content
 
     def __generate_random_hashtags(self):
-        self.output_content = IterateRandomHashtags(self).random_hashtag_text
+        my_rand_hashtags = GenerateRandomHashtags(self.general_hashtags, self.essential_hashtags, self.number_of_random_lists)
+        self.output_content = my_rand_hashtags.random_hashtag_text
 
     def __write_random_hashtag_file(self):
-        WriteTextContent(self)
+        output_hashtag_file = os.path.join(os.path.dirname(__file__), 'Output', self.output_hashtag_file)
+        WriteTextContent.write_file(output_hashtag_file, self.output_content)
 
     def __create_dockerfile(self):
         file_path = (os.path.dirname(__file__))

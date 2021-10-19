@@ -1,6 +1,6 @@
 {
     "general_hashtag_file": "AllGeneralHashtags.txt",
     "essential_hashtag_file": "AllEssentialHashtags.txt",
-    "number_of_random_lists": 10,
+    "number_of_random_lists": 100,
     "output_hashtag_file": "RandomHashtags.txt"
 }

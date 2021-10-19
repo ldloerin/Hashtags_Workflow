@@ -1,10 +1,13 @@
+import codecs
+
+
 class CleanHashtags():
-    def __init__(self, input):
-        self.content = input.content
-        self.input_file = input.hashtag_file
+    def __init__(self, content, hashtag_file):
+        self.content = content
+        self.input_file = hashtag_file
         self.__remove_word_wrapping()
         self.__remove_double_content()
-        # self.__rewrite_hashtag_file()
+        self.__rewrite_hashtag_file()
 
     def __remove_word_wrapping(self):
         self.new_content = []
@@ -21,6 +24,6 @@ class CleanHashtags():
         for line in self.new_content:
             new_content += line
             new_content += '\n'
-        f = open(self.input_file, 'w')
+        f = codecs.open(self.input_file, "w", "utf-8")
         f.write(new_content)
         f.close()
