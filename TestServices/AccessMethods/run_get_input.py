@@ -7,4 +7,6 @@ from Services.Config.get_input import GetInput
 
 class RunGetInput(GetInput):
     def execute_workflow(self):
+        print('>>>',self.code_path)
+        print('>>>',dir(self))
         return self
